@@ -4,7 +4,7 @@ SlidebookObj is a Matlab class for processing and analyzing Tiff files generated
 
 The class contains some basic tools for exploring data using ROIs (much like the Slidebook software), making use of the accompanying DAQ file saved with each experiment to make it easy to find sections of a recording which correspond to a particular stimulus event.
 
-## Getting Started
+## Getting started
 
 ### Installation
 
