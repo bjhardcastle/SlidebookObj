@@ -49,10 +49,12 @@ Most functions (called 'methods' in Matlab object-oriented terminology) will onl
 ```
 runTifReg(obj)
 ```
+
 Some will run on an array of objects, indicated by the input argument 'objarray'
 ```
 sort(objarray)
 ```
+
 For these functions to work, a dataset containing multiple Tiff files should be organized as a [1xN] object array
 ```
 objarray(1) = SlidebookObj( Tiffpath{1} )
@@ -67,12 +69,14 @@ obj.IFI      % average inter-frame interval
 ```  
 or saved individually for each 'trial'. Trial times are obtained from 
 DAQ analog input channel 2 or 3, assuming the DAQ file can be located, and are saved in terms of DAQ sample index and frame number, found from DAQ channel 1.
+
 Various parameters for each trial are found:
 ```
 obj.TrialStartFrame     % Index of first frame captured after trial onset
 obj.TrialXGain			% Gain applied to panels X position during trial
 obj.TrialPatNum			% Pattern number used in trial
 ```
+
 The array of values for all trials can be accessed with square
 brackets,
 ```
@@ -84,17 +88,19 @@ obj.TrialXGain(1)
 ```
 
 ## Modification and extension
-The SlidebookObj class can run basic analysis for generic experiments. Its intended purpose is to act as a 'superclass', from which subclasses can be made with more specific features tailored to individual experiments.
+Although the SlidebookObj class can run basic analyses for generic experiments, its intended purpose is to act as a 'superclass', from which subclasses can be made with more specific features tailored to individual experiments.
 
 A subclass will inherit all of the SlidebookObj functionality, and in addition new methods can be created and existing methods can be modified.
-(see Matlab documentation on subclasses, class definitions and overloading: 
-[Mathworks introduction to object-oriented programming](https://www.mathworks.com/company/newsletters/articles/introduction-to-object-oriented-programming-in-matlab.html))
+
+See the Matlab documentation on subclasses, class definitions and overloading: 
+[Introduction to object-oriented programming](https://www.mathworks.com/company/newsletters/articles/introduction-to-object-oriented-programming-in-matlab.html))
 
 An example subclass constructor method is provided in the [SlidebookObj.m](https://github.com/bjhardcastle/SlidebookObj/blob/master/%40SlidebookObj/SlidebookObj.m) class definition file.
 
 
 ## Author 
 Ben Hardcastle, Frye lab, UCLA
+
 December 2017
 
 ## Acknowledgments
