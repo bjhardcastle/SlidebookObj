@@ -90,7 +90,7 @@ A subclass will inherit all of the SlidebookObj functionality, and in addition n
 (see Matlab documentation on subclasses, class definitions and overloading: 
 [Mathworks introduction to object-oriented programming](https://www.mathworks.com/company/newsletters/articles/introduction-to-object-oriented-programming-in-matlab.html))
 
-An example subclass constructor method is provided in the [SlidebookObj.m](https://github.com/bjhardcastle/SlidebookObj/@SlidebookObj/SlidebookObj.m) class definition file.
+An example subclass constructor method is provided in the [SlidebookObj.m](https://github.com/bjhardcastle/SlidebookObj/blob/master/%40SlidebookObj/SlidebookObj.m) class definition file.
 
 
 ## Author 
