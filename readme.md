@@ -123,8 +123,8 @@ addToTrialEnd(objarray,numSec) % manually shift the end point of all trials
  
  
  
- ### Explore data in GUI
- ```
+### Explore data in GUI
+```
  play(obj,frame_idx) % Opens a GUI (J. Strother) to playback frames, draw ROIs, examine time-series 
 ```
 			
@@ -152,7 +152,7 @@ saveROIs(objarray) % Saved as a .mat file in the same location as the tiff file
 Search for trials 
 ```
 [trialIdx] = findTrials(obj,fields); % Find trials which used specific values for a set of parameters        
-	```
+```
 
 Time-series plots 
 ```
