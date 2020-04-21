@@ -12,14 +12,9 @@ Download the .zip file [here.](https://github.com/bjhardcastle/SlidebookObj/arch
 
 Unzip the contents and save the 'SlidebookObj-master' folder somewhere, renaming it if you like. 
 
-Open the file
-```
-addToPath.m
-```
-in Matlab and run it, so Matlab can find the '@SlidebookObj' folder and 'additionalfuncs'.
- 
- 
- 
+Add all subfolders to Matlab's path so it can access them. 
+The included file [addToPath.m](https://github.com/bjhardcastle/SlidebookObj/blob/master/%40SlidebookObj/play.m)  
+will do this for you automatically. Just open in Matlab and run it. 
  
  
 ### Creating an object from a Tiff file
