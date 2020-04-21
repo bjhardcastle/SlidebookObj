@@ -6,7 +6,7 @@ The class contains some basic tools for exploring data using ROIs (much like the
 
 ## Getting Started
 
-Find the green 'Clone or download' button and 'Download as ZIP'.
+Download the .zip file [here.](https://github.com/bjhardcastle/SlidebookObj/archive/master.zip)
 
 Unzip the contents and save the 'SlidebookObj-master' folder somewhere, renaming it if you like. 
 
