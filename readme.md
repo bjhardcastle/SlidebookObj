@@ -53,7 +53,7 @@ If the DAQ file cannot be found a file browser will open for the user
 to locate it manually, since most analysis of an experiment relies on info from
 the logged DAQ data. 
 
-
+Tested in Matlab 2017a and later. Some built-in Matlab functions used in this class (including 'contains.m') may be missing from earlier versions.
 
 ## Conventions
 
