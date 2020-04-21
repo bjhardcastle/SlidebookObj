@@ -66,6 +66,7 @@ Most analysis with the SlidebookObj class relies on markers encoded in DAQ AI ch
 Variables (or 'properties' in Matlab object terminology) may have a single value per object, for example: 
 ```
 obj.DateStr  % the date the Tiff file was recorded
+
 obj.IFI      % average inter-frame interval
 ```  
 
