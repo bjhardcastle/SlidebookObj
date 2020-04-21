@@ -13,10 +13,9 @@ Download the .zip file [here.](https://github.com/bjhardcastle/SlidebookObj/arch
 Unzip the contents and save the 'SlidebookObj-master' folder somewhere, renaming it if you like. 
 
 Add all subfolders to Matlab's path so it can access them. 
-The included file [addToPath.m](addToPath.m)  
-will do this for you automatically. Just open in Matlab and run it. 
+To do this automatically, open the included file [addToPath.m](addToPath.m) in Matlab and run it. 
  
- 
+  
 ### Creating an object from a Tiff file
 
 Create a new object by running 
