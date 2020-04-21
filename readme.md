@@ -33,7 +33,7 @@ Alternatively, use a GUI to make multiple objects at once and run some initial p
 makeObj
 ```
 
-### Minimum requirements
+## Minimum requirements
 Upon creation, the constructor function will attempt to find other files associated with the Tiff file:
 ```
 obj.LogFile      % log.txt saved on Tiff export from Slidebook
@@ -44,7 +44,7 @@ If the DAQ file cannot be found a file browser will open for the user
 to locate it manually, since most analysis of an experiment relies on info from
 the logged DAQ data. The exception to this is if obj.Unattended = 1.
 
-### Object functions 
+## Object functions 
 Most functions (called 'methods' in Matlab object-oriented terminology) will only run on a single object, for example
 ```
 runTifReg(obj)
@@ -87,18 +87,19 @@ obj.TrialXGain(1)
 The SlidebookObj class can run basic analysis for generic experiments. Its intended purpose is to act as a 'superclass', from which subclasses can be made with more specific features tailored to individual experiments.
 
 A subclass will inherit all of the SlidebookObj functionality, and in addition new methods can be created and existing methods can be modified.
-(see Matlab documentation on subclasses, class definitions and overloading)
-[Mathworks](https://www.mathworks.com/company/newsletters/articles/introduction-to-object-oriented-programming-in-matlab.html) - Mathworks introduction to object-oriented programming
+(see Matlab documentation on subclasses, class definitions and overloading: 
+[Mathworks introduction to object-oriented programming](https://www.mathworks.com/company/newsletters/articles/introduction-to-object-oriented-programming-in-matlab.html))
 
 An example subclass constructor method is provided in the SlidebookObj.m class definition file.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Author 
 Ben Hardcastle, Frye lab, UCLA, December 2017
 
 ## Acknowledgments
 
-* The original GUI for playback of Tiff files is taken from James Strother's Neuron Image Analysis toolbox, which was the inspiration and blueprint for this project. [bitbucket.com/jastrother]https://bitbucket.org/jastrother/neuron_image_analysis/src/master/ - Bitbucket page for Neuron Image Analysis by JA Strother
+* The original GUI for playback of Tiff files is taken from James Strother's Neuron Image Analysis toolbox, which was the inspiration and blueprint for this project. [bitbucket.com/jastrother]https://bitbucket.org/jastrother/neuron_image_analysis/src/master/
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
