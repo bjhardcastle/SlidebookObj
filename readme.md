@@ -14,8 +14,9 @@ Unzip the contents and save the 'SlidebookObj-master' folder somewhere, renaming
 
 Add all subfolders to Matlab's path so it can access them. 
 To do this automatically, open the included file [addToPath.m](addToPath.m) in Matlab and run it. 
- 
- 
+
+
+  
 ### Creating an object from a Tiff file
 
 Create a new object by running 
