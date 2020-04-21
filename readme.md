@@ -90,7 +90,7 @@ A subclass will inherit all of the SlidebookObj functionality, and in addition n
 (see Matlab documentation on subclasses, class definitions and overloading: 
 [Mathworks introduction to object-oriented programming](https://www.mathworks.com/company/newsletters/articles/introduction-to-object-oriented-programming-in-matlab.html))
 
-An example subclass constructor method is provided in the SlidebookObj.m class definition file.
+An example subclass constructor method is provided in the [SlidebookObj.m](SlidebookObj.m) class definition file.
 
 
 ## Author 
@@ -98,7 +98,7 @@ Ben Hardcastle, Frye lab, UCLA, December 2017
 
 ## Acknowledgments
 
-* The original GUI for playback of Tiff files is taken from James Strother's Neuron Image Analysis toolbox, which was the inspiration and blueprint for this project. [bitbucket.com/jastrother]https://bitbucket.org/jastrother/neuron_image_analysis/src/master/
+* The original GUI for playback of Tiff files is taken from James Strother's Neuron Image Analysis toolbox, which was the inspiration and blueprint for this project. [bitbucket.com/jastrother](https://bitbucket.org/jastrother/neuron_image_analysis/src/master/)
 
 ## License
 
