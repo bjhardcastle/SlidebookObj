@@ -32,6 +32,7 @@ Alternatively, use a GUI to make multiple objects at once and run some initial p
 ```
 makeObj
 ```
+
 ### Minimum requirements
 Upon creation, the constructor function will attempt to find other files associated with the Tiff file:
 ```
