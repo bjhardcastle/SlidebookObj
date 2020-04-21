@@ -5,7 +5,8 @@ SlidebookObj is a Matlab class for processing and analyzing Tiff files generated
 The class contains some basic tools for exploring data using ROIs (much like the Slidebook software), making use of the accompanying DAQ file saved with each experiment to make it easy to find sections of a recording which correspond to a particular stimulus event.
 
 ## Getting Started
-###Installation
+
+### Installation
 
 Download the .zip file [here.](https://github.com/bjhardcastle/SlidebookObj/archive/master.zip)
 
@@ -41,6 +42,7 @@ makeObj
 
 
 ### Minimum requirements
+
 Upon creation, the constructor function will attempt to find other files associated with the Tiff file:
 ```
 obj.LogFile      % log.txt saved on Tiff export from Slidebook
@@ -59,6 +61,7 @@ the logged DAQ data.
 Most analysis with the SlidebookObj class relies on markers encoded in DAQ AI channel 2 or 3 which denote periods during which a stimulus was running (panels display, Chrimson excitation etc.). These periods are are referred to as 'trials'. Each trial is marked by a rising edge at the start and falling edge at the end, with a DC voltage in between which can be used to encode some parameter associated with the trial (pattern number, for example). Trial start/end times are stored both in terms of DAQ sampling index and the index of the nearest frame captured within the trial.
 
 ### Object variables 
+
 Variables (or 'properties' in Matlab object terminology) may have a single value per object, for example: 
 ```
 obj.DateStr  % the date the Tiff file was recorded
@@ -83,7 +86,8 @@ obj.TrialXGain(1)
 ```
 
 
-### Object functions 
+### Object functions
+ 
 Most functions (or 'methods') can only run on a single object, for example:
 ```
 getFrames(obj)
@@ -102,9 +106,10 @@ objarray(2) = SlidebookObj( Tiffpath{2} )
 
 
 
-
+## Workflow
 
 ### Initial processing
+
 Process DAQ AI channel data with these commands:
 ```
 getDaqData(obj) % Read an object's DAQ file and temporarily store the data within
@@ -124,6 +129,7 @@ addToTrialEnd(objarray,numSec) % manually shift the end point of all trials
  
  
 ### Explore data in GUI
+
 ```
  play(obj,frame_idx) % Opens a GUI (J. Strother) to playback frames, draw ROIs, examine time-series 
 ```
@@ -149,6 +155,7 @@ saveROIs(objarray) % Saved as a .mat file in the same location as the tiff file
 
 
 ### Find and plot activity in specific trials 
+
 Search for trials 
 ```
 [trialIdx] = findTrials(obj,fields); % Find trials which used specific values for a set of parameters        
@@ -169,6 +176,7 @@ Pair-wise comparison plots
 
 
 ### Other basic functions 
+
 These may be useful building blocks for new functions:
 
 ```
@@ -203,6 +211,7 @@ Some tools called by other functions, these are not typically run on their own:
 
 
 ## Modification and extension
+
 Although the SlidebookObj class can run basic analyses for generic experiments, its intended purpose is to act as a 'superclass', from which subclasses can be made with more specific features tailored to individual experiments.
 
 A subclass will inherit all of the SlidebookObj functionality, and in addition new methods can be created and existing methods can be modified.
@@ -217,6 +226,7 @@ An example subclass constructor method is provided in the [SlidebookObj.m](https
 
 
 ## Author 
+
 Ben Hardcastle, Frye lab, UCLA
 
 December 2017
