@@ -17,13 +17,13 @@ addToPath.m
 in Matlab and run it, so Matlab can find the '@SlidebookObj' folder and 'additionalfuncs'.
  
  
-## Creating an object from a .tiff file
+## Creating an object from a Tiff file
 
 Create a new object by running 
 ```
 obj = SlidebookObj  % opens a file browser
 ```
-or specify the path to a tiff file
+or specify the path to a Tiff file
 ```
 obj = SlidebookObj(Tiffpath) % Tiffpath is the location of a tiff file as a string
 ```
@@ -47,7 +47,7 @@ the logged DAQ data. The exception to this is if obj.Unattended = 1.
 ## Object functions 
 Most functions (called 'methods' in Matlab object-oriented terminology) will only run on a single object, for example
 ```
-runTifReg(obj)
+getFrames(obj)
 ```
 
 Some will run on an array of objects, indicated by the input argument 'objarray'
@@ -93,7 +93,7 @@ Although the SlidebookObj class can run basic analyses for generic experiments, 
 A subclass will inherit all of the SlidebookObj functionality, and in addition new methods can be created and existing methods can be modified.
 
 See the Matlab documentation on subclasses, class definitions and overloading: 
-[Introduction to object-oriented programming](https://www.mathworks.com/company/newsletters/articles/introduction-to-object-oriented-programming-in-matlab.html))
+[Introduction to object-oriented programming](https://www.mathworks.com/company/newsletters/articles/introduction-to-object-oriented-programming-in-matlab.html)
 
 An example subclass constructor method is provided in the [SlidebookObj.m](https://github.com/bjhardcastle/SlidebookObj/blob/master/%40SlidebookObj/SlidebookObj.m) class definition file.
 
@@ -109,4 +109,5 @@ December 2017
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License
+<!--  - see the [LICENSE.md](LICENSE.md) file for details -->
