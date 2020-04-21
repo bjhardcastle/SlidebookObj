@@ -60,7 +60,7 @@ objarray(2) = SlidebookObj( Tiffpath{2} )
 
 ## Object variables 
 Variables ( or 'properties') may be unique for a single object, ie. 
-'''
+```
 obj.DateStr  % the date the Tiff file was recorded
 obj.IFI      % average inter-frame interval
 ```  
@@ -100,4 +100,4 @@ Ben Hardcastle, Frye lab, UCLA, December 2017
 
 ## Acknowledgments
 
-* The original GUI for playback of Tiff files is taken from James Strother's Neuron Image Analysis toolbox, which was the inspiration and blueprint for this project. Thanks! [bitbucket.com/jastrother]https://bitbucket.org/jastrother/neuron_image_analysis/src/master/ - Bitbucket page for Neuron Image Analysis by JA Strother
+* The original GUI for playback of Tiff files is taken from James Strother's Neuron Image Analysis toolbox, which was the inspiration and blueprint for this project. [bitbucket.com/jastrother]https://bitbucket.org/jastrother/neuron_image_analysis/src/master/ - Bitbucket page for Neuron Image Analysis by JA Strother
