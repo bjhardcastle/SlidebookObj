@@ -28,11 +28,7 @@ or specify the path to a Tiff file
 obj = SlidebookObj(Tiffpath) % Tiffpath is the location of a tiff file as a string
 ```
 
-Alternatively, use a GUI to make multiple objects at once and run some initial processing on each one by running
-```
-makeObj
-```
-
+Alternatively, use the makeObj.m GUI (if available) to make an array of multiple objects at once and run some initial processing on each one.
 
 
 
