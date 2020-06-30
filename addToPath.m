@@ -5,7 +5,7 @@ function addToPath()
 if exist(fullfile(cd,'@SlidebookObj'),'dir')
     addpath(cd);
     addpath(fullfile(cd,'additionalfuncs'));
-    addpath(fullfile(cd,'thirdpartyfuncs'));
+    % addpath(fullfile(cd,'thirdpartyfuncs'));
     addpath(fullfile(cd,'icons'));
 
 else
