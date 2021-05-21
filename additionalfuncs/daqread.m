@@ -36,7 +36,7 @@ fileKey=fscanf(fid,'%32c',1);
 % Now check the file key to determine if custom .daq file
 if ( strcmp(fileKey,['SlbObj Data Acquisition File.' 0 25 0]))
     % If so, we only have the logged data to extract:
-    numChans = 1+str2double(fscanf(fid,'%1c',1));
+    numChans = 1+str2double(fscanf(fid,'%2c',1));
     extractedData = fread(fid,[numChans,inf],'double');
     data = extractedData(2:end,:)';
     time=[]; abstime=[]; eventinfo=[]; daqinfo=[];
